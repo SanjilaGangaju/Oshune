@@ -135,3 +135,42 @@ body{
   font-size: 1.1rem;
   cursor: pointer;
 }
+.offer-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+
+}
+.offer-boxes{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ align-items: center;
+ justify-content: center;
+ padding-left: 6px;
+
+
+}
+.offer-boxes img{
+  height: 100%;
+  width: 100%;
+}
+.offer-info{ text-align: center;}
+.offer-info #title {
+  color:brown;
+  text-transform: capitalize;
+ 
+}
+.offer-info #desc{
+  
+  color: rgb(166, 137, 73);
+}
+.offer-info a{
+  text-decoration: none;
+  color:rgb(73, 70, 29);
+  border: 1px solid rgb(164, 128, 67);
+  padding: 5px;
+  border-radius: 6px;
+}
+.offer-info a:hover{
+  box-shadow: 0 0 10px rgb(183, 142, 142);
+}
