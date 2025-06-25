@@ -15,7 +15,7 @@ body{
 
 }
 .container{
-  max-width: 150rem;
+  max-width: 140rem;
   margin: 0px 15%;
 
   
@@ -39,12 +39,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10%;
+
 }
 .logo{
   
   text-align: center;
-  display: inline-block;
+   
    padding-top: 10px;
    margin-top: 12px;
   
@@ -61,7 +61,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 9px;
   
 }
 .nav-item{
@@ -86,7 +86,7 @@ body{
 .add-to-card-button{
   background-color: black;
   color: white;
-  padding: 7px 15px;
+  padding: 7px 10px;
   border-radius: 4px;
   font-size: 0.9rem;
 }
@@ -123,5 +123,15 @@ body{
   
 }
 .hero-left-content{
-     color: black;
+     color: rgb(168, 167, 167);
+}
+.call-to-action{
+  background-color: rgb(165, 111, 70);
+  color:white;
+  border:none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
