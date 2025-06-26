@@ -135,10 +135,15 @@ body{
   font-size: 1.1rem;
   cursor: pointer;
 }
+.offer-section{
+  background-color: rgb(214, 230, 230);
+  padding-top: 4%;
+}
 .offer-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  
+  background-color: white;
+
 
 }
 .offer-boxes{
@@ -173,4 +178,39 @@ body{
 }
 .offer-info a:hover{
   box-shadow: 0 0 10px rgb(183, 142, 142);
+}
+.section-policy{
+  background-color: rgb(214, 230, 230);
+  padding-top: 2%;
+}
+.grid{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  background-color: white;
+}
+.grid-four-cols{
+  grid-template-columns: repeat(4, 1fr);
+}
+.div-policy{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+}
+.div-policy p:first-child{
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  
+
+}
+.div-policy p:last-child{
+  font-size: 0.7rem;
+  text-align: justify;
+  
+}
+.div-policy i{
+  color: rgb(127, 88, 50);
 }
