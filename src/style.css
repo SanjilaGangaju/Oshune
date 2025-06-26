@@ -136,7 +136,7 @@ body{
   cursor: pointer;
 }
 .offer-section{
-   background-color: rgb(231, 231, 231);
+   background-color: rgb(241, 239, 239);
   padding-top: 4%;
 }
 .offer-container{
@@ -180,7 +180,7 @@ body{
   box-shadow: 0 0 10px rgb(183, 142, 142);
 }
 .section-policy{
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(241, 239, 239);
   padding-top: 2%;
   padding-bottom: 4%;
 }
@@ -276,7 +276,7 @@ body{
 }
 .why-choose-us-content1-details p#description{
  
-   font-size: 0.59rem;
+   font-size: 0.8rem;
    font-weight: 100;
 }
 .why-choose-us-content2-details{
@@ -284,7 +284,7 @@ body{
 }
 .why-choose-us-content2-details p#description{
  
-   font-size: 0.59rem;
+   font-size: 0.8rem;
    font-weight: 100;
 }
 .why-choose-us-content2-details p#topic{
@@ -299,4 +299,68 @@ body{
   text-align: center;
   padding: 10px 15px;
   border-radius: 50%;
+}
+.footer-section{
+  background-color: rgb(109, 82, 56);
+  padding: 10px 20px;
+}
+.footer-container{
+   
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 5%;
+
+}
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.footer-box h4{
+  margin-bottom: -1%;
+}
+.footer-box a{
+  text-decoration: none;
+  color: black;
+  font-size: 0.87rem;
+  line-height: 1.8;
+}
+.footer-box li{
+  list-style: none;
+
+}
+
+.footer-box h4{
+  font-size: 1.2rem;
+  
+
+}
+.foot-box1 .cards{
+  display: flex;
+  align-items: center;
+}
+.foot-box1 p{
+  font-size: 0.8rem;
+}
+.cards img{
+  width: 100%;
+ height: 100%;
+}
+.newsletter-box p{
+  font-size: 0.8rem;
+}
+.newsletter-box h4{
+  margin-top: -4px;
+}
+
+.newsletter-box input{
+ 
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+  border: 2px solid pink;
+  border-radius: 5px;
 }
