@@ -136,7 +136,7 @@ body{
   cursor: pointer;
 }
 .offer-section{
-  background-color: rgb(214, 230, 230);
+   background-color: rgb(231, 231, 231);
   padding-top: 4%;
 }
 .offer-container{
@@ -180,8 +180,9 @@ body{
   box-shadow: 0 0 10px rgb(183, 142, 142);
 }
 .section-policy{
-  background-color: rgb(214, 230, 230);
+  background-color: rgb(231, 231, 231);
   padding-top: 2%;
+  padding-bottom: 4%;
 }
 .grid{
   display: grid;
@@ -197,6 +198,7 @@ body{
   display: flex;
   align-items: center;
   gap: 10px;
+      justify-content: center;
   text-transform: capitalize;
 }
 .div-policy p:first-child{
@@ -213,4 +215,88 @@ body{
 }
 .div-policy i{
   color: rgb(127, 88, 50);
+}
+.grid-three-cols{
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  grid-template-columns: 30% 30% 30%;
+}
+.why-choose-us-section{
+    padding : 6% 0;
+}
+.why-choose-image img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+.why-choose-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.why-choose-us-content1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.why-choose-us-content2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.why-choose-us-content2{
+  display: flex;
+  flex-direction: column;
+}
+
+.why-choose-us-content1-details{
+  text-align: right;
+  
+}
+.why-choose-us-content1-details p#no{
+  font-size: 1.2rem;
+  background-color: antiquewhite;
+  display: inline;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.why-choose-us-content1-details p#topic{
+  font-size: 1.1rem;
+  text-transform: capitalize;
+
+}
+.why-choose-us-content1-details p#description{
+ 
+   font-size: 0.59rem;
+   font-weight: 100;
+}
+.why-choose-us-content2-details{
+  text-align: left;
+}
+.why-choose-us-content2-details p#description{
+ 
+   font-size: 0.59rem;
+   font-weight: 100;
+}
+.why-choose-us-content2-details p#topic{
+  font-size: 1.1rem;
+  text-transform: capitalize;
+
+}
+.why-choose-us-content2-details p#no{
+  font-size: 1.2rem;
+  background-color: antiquewhite;
+  display: inline;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 50%;
 }
