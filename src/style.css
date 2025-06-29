@@ -324,7 +324,7 @@ body{
 }
 .footer-section{
   background-color: rgb(109, 82, 56);
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 .footer-container{
    
@@ -407,7 +407,9 @@ body{
     margin: 0;
     padding: 0 1rem;
   }
-
+  .footer-container{
+    gap: 0%;
+  }
   .nav-links ul {
     flex-direction: column;
     gap: 10px;
@@ -415,14 +417,21 @@ body{
 
   .why-choose-image img {
      width: 100%;
-     height: auto;
+     height: 100%;
      object-fit: cover; /* Optional: keep aspect ratio nicely */
      max-width: 100%; /* Prevents overflow */
-     display: block;
+     
+  }
+  .why-choose-us-content1-details{
+    font-size: 0.5rem;
+    text-align: left;
   }
 
   .header-text {
     font-size: 0.75rem;
+  }
+  .footer-section{
+    height: auto;
   }
 }
 .cards img{
