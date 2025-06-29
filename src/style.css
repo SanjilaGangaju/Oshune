@@ -15,9 +15,9 @@ body{
 
 }
 .container{
-  width: 100%;
-  max-width: 1400px; /* or 140rem if intentional */
-  margin: 0 auto;
+
+  max-width: 140rem; /* or 140rem if intentional */
+  margin: 0 10%;
   padding: 0 1rem;
   box-sizing: border-box;
 
@@ -424,4 +424,7 @@ body{
   .header-text {
     font-size: 0.75rem;
   }
+}
+.cards img{
+  width: 70%;
 }
