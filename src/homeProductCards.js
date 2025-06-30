@@ -1,3 +1,5 @@
+import { homequantityToggle } from "./homeQuantityToggle";
+
 const productContainer = document.querySelector('#productContainer');
 const productTemplate = document.querySelector('\#productTemplate');
 export const showProductContainer=(products)=>{
@@ -13,6 +15,12 @@ export const showProductContainer=(products)=>{
         productClone.querySelector('.productImage').alt=name;
         productClone.querySelector('.productStock').textContent= stock;
         productClone.querySelector('.productDescription').textContent=description;
+        productClone.querySelector('.productPrice').textContent=`रु${price}`;
+        productClone.querySelector('.productActualPrice').textContent=`रु${price * 4}`;
+        productClone.querySelector('.stockElement').addEventListener('click',(event)=>{
+            homequantityToggle(event, id, stock);
+
+        });
 
         productContainer.append(productClone);
     })  
