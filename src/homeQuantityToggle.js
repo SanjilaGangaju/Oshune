@@ -4,9 +4,9 @@ export const homequantityToggle= (event, id, stock)=>{
    const productQuantity= currentCardElement.querySelector('.productQuantity');
    
    let quantity = parseInt(productQuantity.getAttribute('data-quanitity')) || 1;
-   if (event.target.classname== 'cartIncrement'){
+   if (event.target.className== 'cartIncrement'){
     if(quantity < stock){
-        quantity +=1;
+        quantity += 1;
     }
     else if(quantity == stock){
         quantity = stock;
@@ -15,10 +15,10 @@ export const homequantityToggle= (event, id, stock)=>{
    }
    if ((event.target.className == 'cardDecrement')){
     if(quantity>1){
-        quanity-=1;
+     quantity-=1;
     }
    }
   productQuantity.innerText = quantity; 
-  productQuantity.setAttribute('data-quantity', quantity);
+  productQuantity.setAttribute('data-quantity', quantity.toString());
   return quantity;
 }
