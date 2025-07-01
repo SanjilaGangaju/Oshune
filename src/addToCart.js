@@ -7,7 +7,8 @@ export const addToCart = (event, id, stock)=>{
     let price= currCardElement.querySelector('.productPrice').innerText.replace("रु", "");
     
     let quantity = currCardElement.querySelector(".productQuantity").innerText;
-    price = price * quantity;
+    price = Number(price * quantity);
+    quantity = Number(quantity);
     let updatecart = {id, quantity, price};
     arrLocalStorageProduct.push(updatecart);
     localStorage.setItem('cartProductLS', JSON.stringify(arrLocalStorageProduct));

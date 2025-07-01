@@ -7,7 +7,7 @@
         "price": 2000,
         "stock": 50,
         "description": "Get a clean, refreshing skin with our foaming, paraben free cleanser.",
-        "image": "product2.png"
+        "image": "prod1.png"
     },
      {
         "id":2,
@@ -17,7 +17,7 @@
         "price": 2000,
         "stock": 50,
         "description": "Get a clean, refreshing skin with our foaming, paraben free cleanser.",
-        "image": "product2.png"
+        "image": "prod1.png"
     }
 
 ]
