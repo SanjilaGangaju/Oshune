@@ -5,7 +5,7 @@ body{
   
 }
 main{
-  margin-top: 100px;
+  margin-top: 90px;
 }
 .top-text{
   background-color: black;
@@ -65,6 +65,11 @@ header{
   justify-content: space-evenly;
 
   
+
+  
+}
+.bottom-container{
+  background-color: rgb(241, 241, 241);
 }
 .nav-links{
   display: flex;
