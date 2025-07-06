@@ -1,9 +1,24 @@
 body{
   margin: 0;
   padding: 0;
+
+  
+}
+main{
+  margin-top: 100px;
 }
 .top-text{
   background-color: black;
+  
+}
+.section-navbar{
+  position: fixed;
+  top: 0;
+  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ 
 }
 
 .head{
@@ -11,7 +26,12 @@ body{
   align-items: center;
   justify-content: space-between;
   color: white;
+  
  
+
+}
+header{
+  position: relative;
 
 }
 .container{
@@ -43,6 +63,7 @@ body{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+
   
 }
 .nav-links{
