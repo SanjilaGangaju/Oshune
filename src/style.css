@@ -11,9 +11,16 @@
 html{
   font-size: 62.5%;
 }
+h1, h2, h3, h4, h5, h6{
+   font-family: 'Noto Serif' ,sans-serif;
+}
 p, li, a{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-weight: 400;
   
-  line-height: 1.5;
+
 }
 
 a{
@@ -36,6 +43,8 @@ body{
     --white-color:  #ffffff;
     --accent-color: #D9A299;
     --icon-color: black;
+    --section-bg--color: #F0E4D3;
+    --outline-color: #DCC5B2;
 
 
   }
@@ -46,8 +55,9 @@ body{
  .container{
   max-width: 122rem;
   margin: 0 auto;
-  padding: 3.4rem;
- }
+  padding: 5rem 2.4rem;
+ 
+}
 .grid{
   display: flex;
 }
@@ -61,7 +71,31 @@ body{
   color: var(--icon-color);
   font-size: 1.4rem;
 }
+.btn{
+   display: inline-block;
+   font-size: 1.8rem;
+   padding: 1rem 1.5rem;
+   text-align: center;
+   cursor: pointer;
+   border: 2px solid var(--accent-color);
+   border-radius: 3rem;
+   -webkit-border-radius: 3rem;
+   -moz-border-radius: 3rem;
+   -ms-border-radius: 3rem;
+   -o-border-radius: 3rem;
+   transition: all .1s ease;
+   -webkit-transition: all .1s ease;
+   -moz-transition: all .1s ease;
+   -ms-transition: all .1s ease;
+   -o-transition: all .1s ease;
+   &:hover{
 
+
+    background-color: var(--accent-color);
+    color: var(--white-color);
+
+  }
+}
 
 /* states */
 .nav-link:hover, .nav-link:focus-visible{
@@ -85,7 +119,8 @@ body{
   width: 100%;
 }
 .section-header .grid{
-  gap: 7.4rem;
+  gap: 9.1rem;
+  padding: 3.4rem 1rem;  
 }
 .navbar{
   padding: 0.5rem 1.4rem;
@@ -159,7 +194,7 @@ body{
       -o-border-radius: 2rem;
       & input
       {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
        
         border: none;
         background-color: transparent;
@@ -167,7 +202,7 @@ body{
         padding: 0 3rem 0 0;
 
         &::placeholder{
-          font-size: 1.4rem;
+          font-size: 1.5rem;
         }
       }
       & .fa-magnifying-glass{
@@ -188,3 +223,59 @@ body{
 
 
 /***** End Navbar Section *****/
+/***** Hero Section *****/ 
+.section-hero .container{
+  background-color: var(--section-bg--color);
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  position: relative;
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  & .hero-heading{
+    font-size: 5.5rem;
+    font-weight: 500;
+  }
+  & .hero-btn{
+    margin-top: 3rem;
+  }
+  & .hero-tag--div{
+    border: 2px solid var(--outline-color);
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+    margin: 0rem 1.1rem 1.1rem 0 ;
+    border-radius: 1.9rem;
+    -webkit-border-radius: 1.9rem;
+    -moz-border-radius: 1.9rem;
+    -ms-border-radius: 1.9rem;
+    -o-border-radius: 1.9rem;
+}
+
+
+}
+.hero-image{
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  width: 36rem;
+  aspect-ratio: 1;
+  & figure{
+    outline: none;
+    border: none;
+
+    & img{
+      width: 100%;
+      
+  }
+}
+
+}
+ /***** End Hero Section *****/
