@@ -59,12 +59,14 @@ body{
  
 }
 .grid{
-  display: flex;
+  display: grid;
 }
 .grid-three--cols{
   grid-template-columns: repeat(3, 1fr);
 }
-
+.grid-two--cols{
+  grid-template-columns: repeat(2, 1fr);
+}
 
 /* module / reusable */
 .fa-solid{
@@ -118,12 +120,9 @@ body{
 .section-header{
   width: 100%;
 }
-.section-header .grid{
-  gap: 9.1rem;
-  padding: 3.4rem 1rem;  
-}
+
 .navbar{
-  padding: 0.5rem 1.4rem;
+
   background-color: white;
   border-radius: 4rem;
   -webkit-border-radius: 4rem;
@@ -135,17 +134,19 @@ body{
   justify-content: center;
 
   & ul{
+    padding: 0.5rem 2.4rem;
     display: flex;
+    align-items: center;
     gap: 2rem;
     
    
     }
     & .nav-link{
       font-size: 1.7rem;
-      padding: 0.4rem 0.7rem;
       text-align: center;
       outline: none;
       border: none;
+      white-space: nowrap;
       transition: all 0.1s ease;
       -webkit-transition: all 0.1s ease;
       -moz-transition: all 0.1s ease;
@@ -156,6 +157,7 @@ body{
 
   .header-center--div .logo-text{
     font-size: 4rem;
+    text-align: center;
     font-family: 'Noto Serif', sans-serif;
     font-weight: 400;
   }
@@ -225,18 +227,22 @@ body{
 /***** End Navbar Section *****/
 /***** Hero Section *****/ 
 .section-hero .container{
+  position: relative;
   background-color: var(--section-bg--color);
   border-radius: 4rem;
   -webkit-border-radius: 4rem;
   -moz-border-radius: 4rem;
   -ms-border-radius: 4rem;
   -o-border-radius: 4rem;
-  position: relative;
+  padding-bottom: 0;
+
+  
 }
 .hero-content{
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  padding-bottom: 3.4rem;
 
   & .hero-heading{
     font-size: 5.5rem;
@@ -256,26 +262,75 @@ body{
     -moz-border-radius: 1.9rem;
     -ms-border-radius: 1.9rem;
     -o-border-radius: 1.9rem;
-}
-
-
+  }
+ 
 }
 .hero-image{
-  padding: 0;
+  position: relative;
+  
+}
+.model-image{
   position: absolute;
   bottom: 0;
-  right: 2rem;
-  width: 36rem;
-  aspect-ratio: 1;
-  & figure{
-    outline: none;
-    border: none;
+  right: 3%;
+  height: 100%;
+  border: none;
+}
+.product-card{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 70%;
+  bottom: 10%;
+  background-color: var(--background-color);
+  border-radius: 1.9rem;
+  -webkit-border-radius: 1.9rem;
+  -moz-border-radius: 1.9rem;
+  -ms-border-radius: 1.9rem;
+  -o-border-radius: 1.9rem;
+  text-align: left;
 
+
+
+  & .card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    & .product-arrow-link{
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: var(--accent-color);
+      padding: 0.6rem 1.4rem;
+      
+       & .fa-arrow-up{
+      
+      transform: rotate(45deg);
+      transform-origin: center;
+      
+     
+}
+    }
+    
+  }
+  & .product-image {
+    background-color: var(--section-bg--color);
+    border-radius: 0.9rem;
+      -webkit-border-radius: 0.9rem;
+      -moz-border-radius: 0.9rem;
+      -ms-border-radius: 0.9rem;
+      -o-border-radius: 0.9rem;
     & img{
       width: 100%;
+      aspect-ratio: 1/0.8;
       
-  }
 }
-
+  }
 }
  /***** End Hero Section *****/
