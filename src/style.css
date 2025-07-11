@@ -1,0 +1,190 @@
+
+/* base rule */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+p, li, a{
+  
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+  color: var(--small-text--color);
+}
+li{
+  list-style: none;
+}
+
+body{
+  background-color: var(--background-color);
+  
+}
+
+/* theme  */
+  :root{
+    --background-color: #FAF7F3;
+    --small-text--color: grey;
+    --white-color:  #ffffff;
+    --accent-color: #D9A299;
+    --icon-color: black;
+
+
+  }
+ 
+
+/* layout */
+
+ .container{
+  max-width: 122rem;
+  margin: 0 auto;
+  padding: 3.4rem;
+ }
+.grid{
+  display: flex;
+}
+.grid-three--cols{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* module / reusable */
+.fa-solid{
+  color: var(--icon-color);
+  font-size: 1.4rem;
+}
+
+
+/* states */
+.nav-link:hover, .nav-link:focus-visible{
+   background-color: var(--accent-color);
+   border: 1px solid var(--accent-color);
+   border-radius: 4rem;
+   -webkit-border-radius: 4rem;
+   -moz-border-radius: 4rem;
+   -ms-border-radius: 4rem;
+   -o-border-radius: 4rem;
+   color: var(--white-color);
+}
+.header-right--div .fa-bag-shopping:hover{
+
+        background-color: var(--accent-color);
+
+      }
+
+/***** Navbar Section *****/
+.section-header{
+  width: 100%;
+}
+.section-header .grid{
+  gap: 7.4rem;
+}
+.navbar{
+  padding: 0.5rem 1.4rem;
+  background-color: white;
+  border-radius: 4rem;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & ul{
+    display: flex;
+    gap: 2rem;
+    
+   
+    }
+    & .nav-link{
+      font-size: 1.7rem;
+      padding: 0.4rem 0.7rem;
+      text-align: center;
+      outline: none;
+      border: none;
+      transition: all 0.1s ease;
+      -webkit-transition: all 0.1s ease;
+      -moz-transition: all 0.1s ease;
+      -ms-transition: all 0.1s ease;
+      -o-transition: all 0.1s ease;
+}
+  }
+
+  .header-center--div .logo-text{
+    font-size: 4rem;
+    font-family: 'Noto Serif', sans-serif;
+    font-weight: 400;
+  }
+  .header-right--div{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+     & .fa-bag-shopping{
+      font-size: 1.9rem;
+      background-color: transparent;
+      padding: 1.4rem 1.5rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+
+      
+    }
+    
+
+    & .search-div{
+      background-color: var(--white-color);
+      padding: 0.6rem 1rem;
+      border-radius: 2rem;
+      -webkit-border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -ms-border-radius: 2rem;
+      -o-border-radius: 2rem;
+      & input
+      {
+        font-size: 1.4rem;
+       
+        border: none;
+        background-color: transparent;
+        outline: none;
+        padding: 0 3rem 0 0;
+
+        &::placeholder{
+          font-size: 1.4rem;
+        }
+      }
+      & .fa-magnifying-glass{
+        background-color: var(--accent-color);
+        padding: 1rem 1.1rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        cursor: pointer;
+      }
+      
+    }
+  }
+
+
+
+
+/***** End Navbar Section *****/
