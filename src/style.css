@@ -55,7 +55,7 @@ body{
  .container{
   max-width: 122rem;
   margin: 0 auto;
-  padding: 5rem 2.4rem;
+  padding: 4rem 4rem;
  
 }
 .grid{
@@ -69,6 +69,10 @@ body{
 }
 
 /* module / reusable */
+.section-commmon--heading{
+  font-size: 5rem;
+  font-weight: 400;
+}
 .fa-solid{
   color: var(--icon-color);
   font-size: 1.4rem;
@@ -281,7 +285,7 @@ body{
   flex-direction: column;
   gap: 1.3rem;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   position: absolute;
   right: 70%;
   bottom: 10%;
@@ -292,6 +296,7 @@ body{
   -ms-border-radius: 1.9rem;
   -o-border-radius: 1.9rem;
   text-align: left;
+  width: auto;
 
 
 
@@ -299,7 +304,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.2rem;
+    gap: 2.2rem;
     & .product-arrow-link{
       border-radius: 50%;
       -webkit-border-radius: 50%;
@@ -326,11 +331,81 @@ body{
       -moz-border-radius: 0.9rem;
       -ms-border-radius: 0.9rem;
       -o-border-radius: 0.9rem;
+   
     & img{
       width: 100%;
-      aspect-ratio: 1/0.8;
+      height: 100%;
+      object-position: center;
+      object-fit: contain;
       
 }
+  
   }
+.product-image figure{
+      width: 100%;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+  & .product-card--subheading{
+    color: var(--small-text--color);
+    font-size: 1.4rem;
+  }
+  & .product-common--title{
+    font-size: 2rem;
+    font-weight: 600;
+    
+  }
+
 }
  /***** End Hero Section *****/
+/***** about us Section *****/  
+.about-content--div .grid{
+  gap: 1.4rem;
+}
+.about-us--div{
+   margin-top: 6rem;
+   background-color: #FAF1E6;
+   border-radius: 4rem;
+   -webkit-border-radius: 4rem;
+   -moz-border-radius: 4rem;
+   -ms-border-radius: 4rem;
+   -o-border-radius: 4rem;
+   
+}
+.about-content--div2{
+  background-color: #FFE8CD;
+  border-radius: 1.9rem;
+  -webkit-border-radius: 1.9rem;
+  -moz-border-radius: 1.9rem;
+  -ms-border-radius: 1.9rem;
+  -o-border-radius: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 3rem;
+
+  & .section-common--heading{
+    font-size: 4rem;
+  }
+
+  & .fa-wand-magic-sparkles{
+    font-size: 2.8rem;
+  }
+}
+.about-image--1 {
+  border-radius: 1.9rem;
+  background-color: #E1C78F;
+  -webkit-border-radius: 1.9rem;
+  -moz-border-radius: 1.9rem;
+  -ms-border-radius: 1.9rem;
+  -o-border-radius: 1.9rem;
+  overflow: hidden;
+
+  & img{
+  width: 100%;
+  height: 100%;
+  }
+}
+
+/***** End about us Section *****/
