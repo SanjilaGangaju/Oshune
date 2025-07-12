@@ -69,6 +69,77 @@ body{
 }
 
 /* module / reusable */
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: var(--white-color);
+  border-radius: 1.9rem;
+  -webkit-border-radius: 1.9rem;
+  -moz-border-radius: 1.9rem;
+  -ms-border-radius: 1.9rem;
+  -o-border-radius: 1.9rem;
+  text-align: left;
+  width: 20rem;
+  height: 20rem;
+
+  & .card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.2rem;
+    & .product-arrow-link{
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: var(--accent-color);
+      padding: 0.6rem 1.4rem;
+      
+       & .fa-arrow-up{
+      
+      transform: rotate(45deg);
+      transform-origin: center;
+      }
+    }
+    
+  }
+  & .product-image {
+    border-radius: 0.9rem;
+     -webkit-border-radius: 0.9rem;
+     -moz-border-radius: 0.9rem;
+      -ms-border-radius: 0.9rem;
+      -o-border-radius: 0.9rem;
+      height: 10rem;
+   
+    & img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+  
+  }
+.product-image figure{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+.product-info .product-card--subheading{
+    color: var(--small-text--color);
+    font-size: 1.4rem;
+  }
+.card-title .product-common--title{
+    font-size: 2rem;
+    font-weight: 600;
+    
+  }
+
+}
 .section-commmon--heading{
   font-size: 5rem;
   font-weight: 400;
@@ -276,7 +347,7 @@ body{
   height: 100%;
   border: none;
 }
-.product-card{
+.hero-image .product-card{
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
@@ -368,7 +439,7 @@ body{
 }
 .about-us--content{
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 40% 30%;
+  grid-template-rows: 50% 50%;
   gap: 1.4rem;
   
 }
@@ -380,6 +451,7 @@ body{
   -moz-border-radius: 1.9rem;
   -ms-border-radius: 1.9rem;
   -o-border-radius: 1.9rem;
+  overflow: hidden;
 }
  .about-content--div1 figure{
   width: 100%;
@@ -388,9 +460,9 @@ body{
   
   & img{
     width: 100%;
-    height: 100%;
     object-fit: contain;
-    
+    height: 100%;
+    object-position: center bottom;    
     
   }
  }
@@ -416,7 +488,7 @@ body{
 
   }
   & .section-common--heading{
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 }
@@ -455,3 +527,24 @@ body{
   padding: 0 1.2rem;
   text-align: justify;
 }
+/***** best selling Section *****/ 
+.best-selling--products{
+  margin-top: -3%;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.best-selling--content{
+  grid-template-columns: 35% 50%;
+  gap: 16rem;
+
+  & p{
+    overflow-wrap: break-word;
+  }
+}
+.section-best--selling{
+  & .section-commmon--heading{
+    font-size: 3.5rem;
+  }
+}
+ /***** End best selling Section *****/
