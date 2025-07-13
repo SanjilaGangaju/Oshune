@@ -69,8 +69,107 @@ body{
 }
 
 /* module / reusable */
-
+.product-container{
+    gap: 2.4rem;
+    align-items: center;
+    justify-content: center;
+}
 .product-card{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  background-color: #f8f8f8;
+  border-radius: 1.9rem;
+  -webkit-border-radius: 1.9rem;
+  -moz-border-radius: 1.9rem;
+  -ms-border-radius: 1.9rem;
+  -o-border-radius: 1.9rem;
+  padding: 2.2rem 2.2rem;
+
+  & .product-description{
+     & .description{
+      font-size: 1.5rem;
+    }
+   }
+
+}
+.img-container{
+  border: 1px solid rgb(208, 196, 196);
+  width: 100%;
+  height: 20rem;
+  background-color: var(--section-bg--color);
+  border-radius: 1.9rem;
+
+  -webkit-border-radius: 1.9rem;
+  -moz-border-radius: 1.9rem;
+  -ms-border-radius: 1.9rem;
+  -o-border-radius: 1.9rem;
+
+
+  & .product-image
+  {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.product-info{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 1.2rem;
+  
+  & .product-info-1{
+    display: flex;
+    gap: 9.2rem;
+    & .product-title--stock{
+      flex-grow: 1;
+    }
+    & .product-name{
+      font-size: 1.85rem;
+      font-weight: 500;
+    }
+    & .product-card--subheading{
+      font-size: 1.35rem;
+      color: var(--small-text--color);
+    }
+    & .product-cart--button{
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: var(--accent-color);
+      outline: none;
+      border: none;
+      cursor: pointer;
+
+
+    }
+    & .fa-bag-shopping{
+      font-size: 2.2rem;
+      padding: 1.2rem;
+      text-align: center;
+      
+    }
+    
+  }
+   & .product-price-segment{
+        & .product-price{
+         font-weight: 500;
+         font-size: 1.7rem;
+         }
+
+         & .product-actual-price{
+          font-size: 1.3rem;
+          text-decoration: line-through;
+          color: var(--small-text--color);
+         }
+    }
+
+}
+/* .product-card{
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
@@ -139,7 +238,7 @@ body{
     
   }
 
-}
+} */
 .section-commmon--heading{
   font-size: 5rem;
   font-weight: 400;
@@ -347,7 +446,7 @@ body{
   height: 100%;
   border: none;
 }
-.hero-image .product-card{
+/* .hero-image .product-card{
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
@@ -423,7 +522,7 @@ body{
     
   }
 
-}
+} */
  /***** End Hero Section *****/
 /***** about us Section *****/ 
 .about-us--div{

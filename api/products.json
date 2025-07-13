@@ -1,0 +1,60 @@
+[
+{
+        "id": 1,
+        "name": "Foaming Cleanser",
+        "category": "Skincare",
+        "price": 500,
+        "stock": 100,
+        "description": "Clean all the dirty stuffs from your face with the foaming cleanser rich in niacinamide",
+        "image": "src/assests/product1.webp"
+
+
+},
+{
+    "id": 2,
+    "name": "Hydrating Moisturizer",
+    "category": "Skincare",
+    "price": 750,
+    "stock": 100,
+    "description": "Lock in moisture and keep your skin soft all day with this hyaluronic acid-rich formula.",
+    "image": "src/assests/product1.webp"
+},
+{
+    "id": 3,
+    "name": "Vitamin C Serum",
+    "category": "Skincare",
+    "price": 1200,
+    "stock": 100,
+    "description": "Brighten your complexion and reduce dark spots with our powerful vitamin C serum.",
+    "image": "src/assests/product1.webp"
+},
+{
+    "id": 4,
+    "name": "Gentle Exfoliating Scrub",
+    "category": "Skincare",
+    "price": 650,
+    "stock": 100,
+    "description": "Exfoliate dead skin cells and reveal fresh skin with our gentle facial scrub.",
+    "image": "src/assests/product1.webp"
+},
+{
+    "id": 5,
+    "name": "Sunscreen SPF 50",
+    "category": "Skincare",
+    "price": 900,
+    "stock": 100,
+    "description": "Protect your skin from harmful UV rays with our broad-spectrum SPF 50 sunscreen.",
+    "image": "src/assests/product1.webp"
+},
+{
+    "id": 6,
+    "name": "Soothing Toner",
+    "category": "Skincare",
+    "price": 550,
+    "stock": 100,
+    "description": "Calm irritated skin and balance your pH with this alcohol-free soothing toner.",
+    "image": "src/assests/product1.webp"
+}
+
+
+]
