@@ -281,7 +281,7 @@
     </section>
     <!-- ========== Product template Start Section ========== -->
     <template id="product-template">
-        <div class="product-card">
+        <div class="product-card" id="card-value">
             <article class="product-info">
                <div class="img-container">
                 <img class="product-image" src="">
@@ -303,6 +303,7 @@
 
                </div>
                
+               
                <div class="product-price-segment">
                 <span class="product-price">$120</span>
 
@@ -310,6 +311,16 @@
                </div>
                <div class="product-description">
                 <p class="description"></p>
+               </div>
+               <div class="product-quantity">
+                <p class="product-property">Quantity(Pieces)</p>
+                <div class="product-quantity--stock grid grid-three--cols">
+                    <button class="incre-button">+</button>
+                    <p class="quantity">1</p>
+                    <button class="decre-button">
+                        -
+                    </button>
+                </div>
                </div>
 
             </article>
