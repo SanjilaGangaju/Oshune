@@ -30,7 +30,7 @@ export const showProductContainer=(products)=>{
                         addToCart(event, id , stock);
                 
                    });
-                   container.append(productClone);
+                  container.append(productClone);
 
         });
       
