@@ -1,5 +1,6 @@
 import { getCartProductFromLS } from "./getCartProducts";
-
+import { updateCartValue } from "./updateCartValue";
+getCartProductFromLS();
 export const addToCart =(event, id, stock)=>{
 
     let arrLocalStorageProduct = getCartProductFromLS();
@@ -9,15 +10,40 @@ export const addToCart =(event, id, stock)=>{
     let price= currentProdElem.querySelector(".product-price").innerText;
     
     price =Number(price.replace('₹', ""));
-    quantity= Number(quantity);
+    
+    let existingProduct= arrLocalStorageProduct.find((curProd)=>{
+        
+        return curProd.id == id;
 
+    });
+    console.log(existingProduct);
+    if (existingProduct && quantity >= 1){
+        quantity = Number(existingProduct.quantity) + Number(quantity);
+        console.log(quantity);
+        price = Number(price * quantity);
+        let updatedCart = { id , quantity, price};
+        updatedCart = arrLocalStorageProduct.map((curProd)=>{
+            return (curProd.id == id) ? updatedCart : curProd;
+
+            });
+          localStorage.setItem("cartProductsLS", JSON.stringify(updatedCart));
+   
+        
+
+    }
+    if (existingProduct){
+        return false
+    }
+    quantity= Number(quantity);
+    
     price = Number(price*quantity);
+
+    
+    arrLocalStorageProduct.push({id, quantity, price});
+    localStorage.setItem("cartProductsLS", JSON.stringify(arrLocalStorageProduct));
     
 
-
-    let updateCart = {id, quantity, price};
-    arrLocalStorageProduct.push(updateCart);
-    localStorage.setItem("cartProductsLS", JSON.stringify(arrLocalStorageProduct));
-    console.log("After adding:", JSON.parse(localStorage.getItem("cartProductsLS")));
+    updateCartValue(arrLocalStorageProduct);
+    
 
 };

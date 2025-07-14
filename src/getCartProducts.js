@@ -1,10 +1,16 @@
+import { updateCartValue } from "./updateCartValue";
+
 export const getCartProductFromLS = () =>{
     let cartProducts = localStorage.getItem("cartProductsLS");
     if(!cartProducts){
         return [];
     }
-    return JSON.parse(cartProducts);
+    cartProducts= JSON.parse(cartProducts);
+    updateCartValue(cartProducts);
+    return cartProducts;
+
     
+
 
 
 }
