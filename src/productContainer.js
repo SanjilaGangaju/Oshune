@@ -16,7 +16,7 @@ export const showProductContainer=(products)=>{
          productContainer.forEach((container)=>{
 
                    const productClone= productTemplate.content.cloneNode(true);
-                   productClone.querySelector('.card-value').setAttribute('id', `card${id}`);
+                   productClone.querySelector('#card-value').setAttribute('id', `card${id}`);
                    productClone.querySelector('.product-name').textContent = name;
                    productClone.querySelector('.product-card--subheading').textContent= `${stock} remaining in stock`;
                    productClone.querySelector('.description').textContent= description;
