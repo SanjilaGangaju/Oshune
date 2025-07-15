@@ -19,7 +19,7 @@ export const showCartProducts = (cartProds, products)=>{
             cartProdClone.querySelector('.cart-product--title').textContent = product.name;
         }
         cartProdClone.querySelector('.cart-product--price').textContent= `₹ ${price}`;
-        cartProdClone.querySelector('.cart-product--quantity').textContent= `Quantity: ${quantity}`;
+        cartProdClone.querySelector('.quantity-value').textContent= `${quantity}`;
         cartProdsContainer.append(cartProdClone);
        
     })
