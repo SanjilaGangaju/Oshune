@@ -686,7 +686,18 @@ body{
  /***** End best selling Section *****/
 
  /***** cart products Section *****/ 
-
+.empty-cart {
+  text-align: center;
+  color: var(--accent-color, #b97c6d);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 4rem 0;
+  letter-spacing: 1px;
+  background: #fff7f3;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
  
  
 .cart-product--item{
