@@ -1,3 +1,4 @@
+import { updateCartValue } from "./assests/updateCartValue";
 import { getCartProductFromLS } from "./getCartProducts";
 import { updateCartValue } from "./updateCartValue";
 getCartProductFromLS();
