@@ -1,4 +1,5 @@
-import { updateCartValue } from "./assests/updateCartValue";
+
+import { cartPrice } from "./cartPrice";
 import { getCartProductFromLS } from "./getCartProducts";
 import { updateCartValue } from "./updateCartValue";
 getCartProductFromLS();
@@ -45,6 +46,7 @@ export const addToCart =(event, id, stock)=>{
     
 
     updateCartValue(arrLocalStorageProduct);
+    cartPrice();
     
 
 };

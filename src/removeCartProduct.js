@@ -1,3 +1,4 @@
+import { cartPrice } from "./cartPrice";
 import { getCartProductFromLS } from "./getCartProducts";
 import { updateCartValue } from "./updateCartValue";
 
@@ -12,4 +13,5 @@ export const removeCartProd = (event, id)=>{
   localStorage.setItem("cartProductsLS", JSON.stringify(cartProducts));
 
   updateCartValue(cartProducts);
+  cartPrice();
 }

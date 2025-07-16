@@ -1,3 +1,4 @@
+import { cartPrice } from "./cartPrice";
 import { updateCartValue } from "./updateCartValue";
 
 export const getCartProductFromLS = () =>{
@@ -7,6 +8,7 @@ export const getCartProductFromLS = () =>{
     }
     cartProducts= JSON.parse(cartProducts);
     updateCartValue(cartProducts);
+
     return cartProducts;
 
     

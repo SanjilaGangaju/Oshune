@@ -1,3 +1,4 @@
+import { cartPrice } from "./cartPrice";
 import { getCartProductFromLS } from "./getCartProducts";
 import { updateCartValue } from "./updateCartValue";
 
@@ -56,6 +57,8 @@ export const incrementDecrement=(event, id, stock, price)=>{
      
      quantityElem.innerText=quantity;
      currProdPrice.innerText = `₹${localproductPrice}`;
-
+      
+     updateCartValue(updateCartProducts);
+     cartPrice();
     
 }
