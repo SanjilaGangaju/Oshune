@@ -2,7 +2,6 @@ import { addToCart } from "./addToCart";
 import { homeQuantityToggle } from "./homeQuantityToggle";
 
 const productContainer = document.querySelectorAll('.product-container');
-console.log(productContainer);
 const productTemplate = document.querySelector('#product-template');
 const bestSelling = document.querySelector('.best-selling--products');
 export const showProductContainer=(products)=>{

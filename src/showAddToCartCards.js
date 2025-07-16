@@ -18,7 +18,7 @@ export const showCartProducts = (cartProds, products)=>{
         cartProdClone.querySelector('.cart-product--item').setAttribute("id", `card${id}`)
         const product = products.find((prod)=> prod.id == id);
         const {stock, price} = product;
-        console.log(price);
+
         if (product) {
             cartProdClone.querySelector('.cart-product--img').src = product.image;
             cartProdClone.querySelector('.cart-product--title').textContent = product.name;

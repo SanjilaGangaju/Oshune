@@ -19,7 +19,7 @@ export const addToCart =(event, id, stock)=>{
     
     if (existingProduct && quantity >= 1){
         quantity = Number(existingProduct.quantity) + Number(quantity);
-        console.log(quantity);
+    
         price = Number(price * quantity);
         let updatedCart = { id , quantity, price};
         updatedCart = arrLocalStorageProduct.map((curProd)=>{
