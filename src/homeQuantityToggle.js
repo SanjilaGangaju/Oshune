@@ -3,9 +3,9 @@
 export const homeQuantityToggle=(event, id, stock)=>{
         const currCardElement = document.querySelector(`#card${id}`);
         const productQuantity = currCardElement.querySelector('.quantity');
-        console.log(productQuantity);
+      
         let quantity = parseInt(productQuantity.getAttribute('data-quantity')) || 1;
-        console.log(event.target);
+   
         if (event.target.className == "incre-button"){
              if (quantity < stock){
                 quantity +=1;
