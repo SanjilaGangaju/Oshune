@@ -7,7 +7,7 @@ export const removeCartProd = (event, id)=>{
 
   //remove from local storage
   let cartProducts = getCartProductFromLS();
-  cartProducts = cartProducts.filter(prod => prod.id != id);
+  cartProducts = cartProducts.filter(prod => prod.id !== id);
   
   localStorage.setItem("cartProductsLS", JSON.stringify(cartProducts));
 

@@ -791,4 +791,66 @@ body{
      
   }
 }
- /***** End cart products Section *****/
+/***** End cart products Section *****/
+/***** product-bill Section *****/ 
+
+.cart-bil--div {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 0;
+
+}
+
+.cart-total--bill {
+  background: #fff7f3;
+  border: 2px solid var(--accent-color, #b97c6d);
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2.5rem 3rem;
+  min-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.cart-total--bill > p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--accent-color, #b97c6d);
+  margin-bottom: 1rem;
+  align-self: flex-start;
+}
+
+.sub-total--div,
+.tax-div,
+.total-div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.tax-div{
+  border-bottom: 2px solid black;
+}
+
+
+.bill-label,
+.tax-label,
+.total-label {
+  color: #222;
+}
+
+.bill-value,
+.tax-value,
+.total-value {
+  color: var(--accent-color, #b97c6d);
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+ /***** End product-bill  *****/
+ 
