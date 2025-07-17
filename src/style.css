@@ -447,7 +447,7 @@ body{
 /***** End Navbar Section *****/
 /***** Hero Section *****/ 
 .section-hero .container{
-  position: relative;
+  
   background-color: var(--section-bg--color);
   border-radius: 1.9rem;
   -webkit-border-radius: 1.9rem;
@@ -484,16 +484,16 @@ body{
  
 }
 .hero-image{
-  position: relative;
-  
+  width: 100%;
+  overflow: hidden;
+
+  & img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
-.model-image{
-  position: absolute;
-  bottom: 0;
-  right: 3%;
-  height: 100%;
-  border: none;
-}
+
 /* .hero-image .product-card{
   display: flex;
   flex-direction: column;
@@ -947,7 +947,7 @@ body{
     text-align: left;
   }
   & img{
-    width: 50%;
+    width: 49%;
     object-fit: contain;
   }
   & h4{
@@ -1011,3 +1011,67 @@ body{
   
 }
 /***** End footer *****/
+
+
+/***** responsiveness *****/  /***** End responsiveness *****/
+@media (width <= 1400px) {
+   html {
+    font-size: 56.25%;
+   }
+   
+   
+}
+@media (width <= 1200px){
+    html {
+    font-size: 52%;
+   }
+}
+
+
+@media (width <= 768px){
+  html{
+    font-size: 43%;
+  }
+   .grid-two--cols{
+     grid-template-columns: 1fr;
+   }
+   .grid-four--cols{
+    grid-template-columns: auto;
+   }
+   .grid-three--cols{
+    grid-template-columns: auto;
+   }
+   .footer-div img{
+    width: 30%;
+     
+   }
+   .footer-email{
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+   }
+   .hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 70rem;
+    order: 1;
+   }
+   .hero-content{
+    order: 2;
+   }
+   .hero-image img{
+        width: 100%;
+    
+
+   }
+   .navbar ul{
+    margin: 0rem -20rem;
+   }
+   .section-about--content .grid{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   
+}
