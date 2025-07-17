@@ -355,6 +355,7 @@ body{
       text-align: center;
       outline: none;
       border: none;
+      text-transform: capitalize;
       white-space: nowrap;
       transition: all 0.1s ease;
       -webkit-transition: all 0.1s ease;
@@ -854,3 +855,52 @@ body{
 }
  /***** End product-bill  *****/
  
+/* toast notification */
+
+.toast{
+  position: fixed;
+  top: 10rem;
+  right: 0.8rem;
+  width: 30rem;
+  text-align: center;
+  box-shadow:  0 0 8px var(--accent-color);
+  background-color: var(--background-color);
+  color: var(--small-text--color);
+  font-size: 1.19rem;
+  padding: 1.2rem 0.4rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  opacity: 0;
+  animation: toast-notification 2s linear backwards ;
+  -webkit-animation: toast-notification 2s linear backwards ;
+}
+@keyframes toast-notification {
+  0%{
+    transform: translateX(100%) ;
+    -webkit-transform: translateX(100%) ;
+    -moz-transform: translateX(100%) ;
+    -ms-transform: translateX(100%) ;
+    -o-transform: translateX(100%) ;
+    opacity: 0;
+}
+20%{
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  opacity: 1;
+}
+  100%{
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  opacity: 1;
+}
+  
+}
