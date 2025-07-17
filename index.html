@@ -21,16 +21,13 @@
                             <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                            <a href="index.html" class="nav-link">about us</a>
+                            <a href="#about-us" class="nav-link">about us</a>
                      </li>
                      <li class="nav-item">
-                            <a href="index.html" class="nav-link">products</a>
+                            <a href="#products" class="nav-link">products</a>
                     </li>
                     <li class="nav-item">
-                            <a href="index.html" class="nav-link">shop</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="index.html" class="nav-link">contact us</a>
+                            <a href="contact.html" class="nav-link">contact us</a>
                     </li>
                         
                     </ul>
@@ -41,21 +38,23 @@
             <div class="header-center--div">
                 <p class="logo-text">Oshune.</p>
             </div>
-            <div class="header-right--div">
+            <d class="header-right--div">
                 <div class="search-div">
-                     <form role="search" action="/search">
+                     <form id="form-id" role="search" action="/search">
                         <input type="search" name="search"  autocomplete="off" placeholder="Search...">
                         <i class="fa-solid fa-magnifying-glass"></i>
                      </form>
                      
                 </div>
-                <li class="nav-item">
-                            <a href="/src/addToCart.html" class="nav-link" id="cart-value">
-                            <i class="fa-solid fa-bag-shopping">0</i></a>
-                    </li>
                 
-               
-            </div>
+                <button class="cart-homepage--btn">
+                    <a href="/src/addToCart.html" id="cart-value">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                      <span id="cart-count">0</span>
+                    </a>
+                </button>
+                
+           </div>
         </div>
     </header>
     <!-- ========== End Header Section ========== -->
@@ -329,7 +328,12 @@
     <!-- =========Product template = End Section ========== -->
     
     <!-- ========== End product container Section ========== -->
-    
+    <footer class="section-footer">
+        <div class="container footer-container">
+           <script type="module" src="./src/footer.js"></script>
+        
+        </div>
+    </footer>
  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
