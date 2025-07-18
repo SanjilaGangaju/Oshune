@@ -16,7 +16,11 @@
     <header class="section-header">
         <div class="container grid grid-three--cols">
             <nav class="navbar">
-                 <ul>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                     <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <ul>
                     <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                     </li>
@@ -31,6 +35,8 @@
                     </li>
                         
                     </ul>
+                </div>
+                
 
             </nav>
 
@@ -38,22 +44,21 @@
             <div class="header-center--div">
                 <p class="logo-text">Oshune.</p>
             </div>
-            <d class="header-right--div">
+            <div class="header-right--div">
                 <div class="search-div">
-                     <form id="form-id" role="search" action="/search">
-                        <input type="search" name="search"  autocomplete="off" placeholder="Search...">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                     <form id="form-id" method='GET' role="search" action="/search">
+                        <input type="search" name="q"  autocomplete="off" placeholder="Search...">
+                       <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
                      </form>
                      
                 </div>
-                
-                <button class="cart-homepage--btn">
+                <div class="cart-homepage--btn">
                     <a href="/src/addToCart.html" id="cart-value">
                       <i class="fa-solid fa-bag-shopping"></i>
-                      <span id="cart-count">0</span>
                     </a>
-                </button>
-                
+                    <span id="cart-count">0</span>
+                </div>
+               
            </div>
         </div>
     </header>

@@ -1,5 +1,4 @@
-const cartbutton = document.querySelector("#cart-value");   
-export const updateCartValue = (cartProducts) => {
-            cartbutton.innerHTML = `<i class="fa-solid fa-bag-shopping">${cartProducts.length}</i>`;
-
+const cartValue = document.querySelector('#cart-count');
+export const updateCartValue=(cartProducts)=>{
+   cartValue.textContent= cartProducts.length;
 }

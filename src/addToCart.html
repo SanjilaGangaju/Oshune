@@ -16,24 +16,27 @@
     <header class="section-header">
         <div class="container grid grid-three--cols">
             <nav class="navbar">
-                 <ul>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                     <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <ul>
                     <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                            <a href="index.html" class="nav-link">about us</a>
+                            <a href="#about-us" class="nav-link">about us</a>
                      </li>
                      <li class="nav-item">
-                            <a href="index.html" class="nav-link">products</a>
+                            <a href="#products" class="nav-link">products</a>
                     </li>
                     <li class="nav-item">
-                            <a href="index.html" class="nav-link">shop</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="index.html" class="nav-link">contact us</a>
+                            <a href="contact.html" class="nav-link">contact us</a>
                     </li>
                         
                     </ul>
+                </div>
+                
 
             </nav>
 
@@ -43,19 +46,20 @@
             </div>
             <div class="header-right--div">
                 <div class="search-div">
-                     <form role="search" action="/search">
-                        <input type="search" name="search"  autocomplete="off" placeholder="Search...">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                     <form id="form-id" method='GET' role="search" action="/search">
+                        <input type="search" name="q"  autocomplete="off" placeholder="Search...">
+                       <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
                      </form>
                      
                 </div>
-                <li class="nav-item">
-                            <a href="addToCart.html" class="nav-link" id="cart-value">
-                            <i class="fa-solid fa-bag-shopping">0</i></a>
-                </li>
-                
+                <div class="cart-homepage--btn">
+                    <a href="/src/addToCart.html" id="cart-value">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                    <span id="cart-count">0</span>
+                </div>
                
-            </div>
+           </div>
         </div>
     </header>
     <!-- ========== End Header Section ========== -->
