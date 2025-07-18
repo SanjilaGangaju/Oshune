@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- ========== Start Header Section ========== -->
-    <header class="section-header">
+     <header class="section-header">
         <div class="container grid grid-three--cols">
             <nav class="navbar">
                 <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
@@ -74,7 +74,7 @@
     </section>
     <!-- ==========cart products template Start Section ========== -->
     <template class="cart-products--template">
-                        <div class="cart-product--item">
+                        <div class="cart-product--item grid grid-three--cols">
                             <div class="cart-product-image">
                                 <img src="#" alt="Product Image" class="cart-product--img">
                             </div>
@@ -87,7 +87,10 @@
                                             <span class="quantity-value">1</span>
                                             <button class="quantity-btn" id="decrease-quantity">-</button>
                                     </div>
-                                    <button class="remove-btn">Remove</button>
+                                   
+                            </div>
+                            <div class="cart-remove--button">
+                                 <button class="btn remove-btn">Remove</button>
                             </div>
                         </div>
     </template>
@@ -125,5 +128,6 @@
     
             
  <script type="module" src="showAddToCartCards.js" ></script>
+<script type="module" src="/src/footer-hrader.js"></script>
 </body>
 </html>

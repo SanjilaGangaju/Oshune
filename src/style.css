@@ -73,12 +73,12 @@ body{
 }
 /* module / reusable */
 .product-container{
-    gap: 2.4rem;
+    row-gap: 4rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .product-card{
-  width: 100%;
+  width: 90%;
   height: 100%;
   border: 1px solid black;
   background-color: #f8f8f8;
@@ -727,20 +727,21 @@ body{
   border-radius: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
- 
+.cart-products--container .grid-three--cols{
+  grid-template-columns: 1fr auto auto;
+  justify-content: space-between;
+  gap: 15rem;
+} 
  
 .cart-product--item{
-  min-height: 12rem;
+  min-height: 10rem;
   width: 100%;
-  
-  display: flex;
-  gap: 2.5rem;
   padding: 2rem 2.5rem; 
   align-items: center;
   border: 1px solid var(--outline-color);
   margin-bottom: 2rem;
 
-
+  
 
   & .cart-product-image{
     width: 8rem;
@@ -756,11 +757,9 @@ body{
     }
   }
   & .cart-product--details{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+   display: flex;
+   align-items: center;
+   gap: 4rem;
 
      & .cart-product--title{
       font-size: 2rem;
@@ -804,9 +803,13 @@ body{
         text-align: right;
         min-width:  7rem;
      }
-     & .remove-btn{
-       background-color: var(--accent-color);
-       border: none;
+
+     
+  }
+}
+.cart-remove--button .remove-btn{
+       background-color: transparent;
+       border: 1px solid var(--accent-color);
        outline: none;
        cursor: pointer;
        padding: 0.6rem 1.3rem;
@@ -816,9 +819,15 @@ body{
        -moz-border-radius: 1.2rem;
        -ms-border-radius: 1.2rem;
        -o-border-radius: 1.2rem;
-}
-     
-  }
+       transition: all 0.3s linear;
+       -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+       -ms-transition: all 0.3s linear;
+       -o-transition: all 0.3s linear;
+
+        &:hover{
+        background-color: var(--accent-color);
+       }
 }
 /***** End cart products Section *****/
 /***** product-bill Section *****/ 

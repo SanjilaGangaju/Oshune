@@ -8,7 +8,7 @@ const footerContent=`
                         </div>
                        <p class="first-div--footer">Clean, effective skincare designed to nourish, protect, and delier real results naturally.</p>
                        <div class="footer-cards">
-                           <img src="/src/assests/cards.png" alt="cards">
+                           <img src="/assests/cards.png" alt="cards">
 
                        </div>
                      
