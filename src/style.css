@@ -74,11 +74,12 @@ body{
 /* module / reusable */
 .product-container{
     row-gap: 4rem;
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
 }
 .product-card{
-  width: 90%;
+  width: 100%;
   height: 100%;
   border: 1px solid black;
   background-color: #f8f8f8;
@@ -125,7 +126,7 @@ body{
   
   & .product-info-1{
     display: flex;
-    gap: 9.2rem;
+  
     & .product-title--stock{
       flex-grow: 1;
     }
@@ -1155,6 +1156,16 @@ body{
     }
    }
    /***** cards query *****/ 
+   .product-card{
+    width: auto;
+    height: 100%;
+    padding: 1rem 1rem;
+   }
+   .product-container{
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      row-gap: 2rem;
+   }
    .product-quantity{
      
 
