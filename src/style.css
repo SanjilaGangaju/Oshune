@@ -1360,5 +1360,18 @@ body{
       }
        /***** End about us query Section *****/
     }
+    /***** why best -querySection *****/
+.section-what-makes--best{
+   & .grid-four--cols{
+    grid-template-columns: auto;
+
+    gap: 1rem;
+   }
+}
+.best-card3{
+  margin-top: 0;
+} 
+ /***** End why best -querySection *****/
+    
     
   }
