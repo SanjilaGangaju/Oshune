@@ -1,5 +1,5 @@
 # Oshune Skincare Website
-## Oshune is a modern, responsive skincare e-commerce website built with Html, Css, Vanilla Js built to showcase a curated collection of clean beauty products, designed to noursh skin and highlight natural radiance. This site blends elegant design with interactive features like quantity selectors, add to cart, delete cart items etc and dynamic product listings.
+### Oshune is a modern, responsive skincare e-commerce website built with Html, Css, Vanilla Js built to showcase a curated collection of clean beauty products, designed to noursh skin and highlight natural radiance. This site blends elegant design with interactive features like quantity selectors, add to cart, delete cart items etc and dynamic product listings.
 
 # Features 
 * Interactive UI
