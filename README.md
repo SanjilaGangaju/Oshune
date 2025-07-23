@@ -22,6 +22,8 @@
 
 * Vite – fast development server and build tool
 
+* Sora - website images [https://sora.chatgpt.com/]
+
 # Under Construction
 * Contact page
 * Responsiveness
