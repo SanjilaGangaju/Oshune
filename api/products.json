@@ -26,7 +26,7 @@
     "price": 1200,
     "stock": 100,
     "description": "Brighten your complexion and reduce dark spots with our powerful vitamin C serum.",
-    "image": "/assests/product1.webp"
+    "image": "/assests/product3.webp"
 },
 {
     "id": 4,
@@ -35,7 +35,7 @@
     "price": 650,
     "stock": 100,
     "description": "Exfoliate dead skin cells and reveal fresh skin with our gentle facial scrub.",
-    "image": "/assests/product1.webp"
+    "image": "/assests/product4.webp"
 },
 {
     "id": 5,

@@ -36,9 +36,14 @@ const footerContent=`
                 
                 <div class="footer-div">
                       <h4>Newsletter</h4>
+                      
                       <p>Be the first to be notified about our arrivals, sale and discounts.</p>
                       <div class="footer-email">
-                        <input type="email" placeholder ="Your Email"><button class="btn">Subscribe</button>
+                      <form action="https://formspree.io/f/xvgqkqry" method="POST">
+                        <input type="email" name="email" placeholder ="Your Email">
+                        <button class="btn" type="submit">Subscribe</button>
+                      </form>
+                        
 
                       </div>
 
