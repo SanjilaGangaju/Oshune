@@ -402,6 +402,7 @@ body{
   display: flex;
   align-items: center;
   gap: 3rem;
+  justify-content: center;
 
   
 }
@@ -851,6 +852,7 @@ body{
   flex-direction: column;
   gap: 2rem;
   align-items: stretch;
+  margin-right: 10rem;
 }
 
 .cart-total--bill > p {
