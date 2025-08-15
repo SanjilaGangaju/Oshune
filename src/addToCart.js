@@ -46,8 +46,9 @@ export const addToCart =(event, id, stock)=>{
     localStorage.setItem("cartProductsLS", JSON.stringify(arrLocalStorageProduct));
     
     cartPrice();
+      showToast("add", id);
     updateCartValue(arrLocalStorageProduct);
-     showToast("add", id);
+   
    
     
 
