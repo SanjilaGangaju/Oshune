@@ -2,7 +2,7 @@ import { getCartProductFromLS } from "./getCartProducts";
 import products from "../api/products.json";
 import { removeCartProd } from "./removeCartProduct";
 import { incrementDecrement } from "./incrementDecrement";
-import { addToCart } from "./addToCart";
+// import { addToCart } from "./addToCart";
 import { cartPrice } from "./cartPrice";
 const cartProdsTemplate = document.querySelector(".cart-products--template");
 const cartProdsContainer = document.querySelector(".cart-products--container"); 
